@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background:url(../img/pattern.png);
+}
+ul,ol,li{
+	list-style: none;
+}
+.hide li{
+	list-style: none
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+#main{
+	width: 950px;
+  	margin: 20px auto 0 auto;
+}
+#header{
+	width: 950px;
+	height: 105px;
+	/*background: blue;*/
+	margin: 0 auto;
+}
+#song{
+	float: right;
+	background: black;
+}
+#logo h1 { 
+	font: normal 280% 'News Cycle', arial, sans-serif;
+	color: white;
+	/*height: 67px;*/
+	padding-left: 20px;
+	padding-top: 25px; 
+	float: left;
+	/*display: inline;*/
+}
+#nav{
+	width: 485px;
+	height: 55px;
+	/*background: red;*/
+	float: right;
+	padding-top: 50px;
+}
+#nav li{
+	font: normal 120% 'News Cycle', arial, sans-serif;
+	width: 100px;
+	height: 30px;
+	float: left;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+#content{
+	width: 950px;
+	background: #333;
+	height: 450px;
+	overflow: hidden;
+}
+#content .leftside{
+	width: 450px;
+	float: left;
+}
+#content .rightside{
+	width: 474px;
+	float: right;
+}
+#content .rightside p{
+	color: white;
+	width: 474px;
+}
+#content .rightside h1{
+	font: normal 200% 'News Cycle', arial, sans-serif;
+	width: 444px;
+	height: 60px;
+	color: white;
+	margin-top: 20px;
+}
+#content .rightside li{
+	color: white;
+}
+#content .hide{
+	display: none;
+}
+#content .leftside img{
+	position: absolute;
+	display: none;
+	width: 450px;
+	height: 450px;
+	background-size: 100% 100%;	
+}
+#content .leftside .show{
+	display: block;	
+}
+#footer{
+	width: 950px;
+	height: 115px;
+	background: #444;
+	width: 950px;
+    font: normal 140% 'News Cycle',  arial, sans-serif;
+    height: 90px;
+    padding: 20px 0 5px 0;
+    text-align: center; 
+
+}
+#footer p{
+	color: white;
+}
+
+@media ( max-width: 700px){
+  #content{
+    width: 100%;
+  }
+  #content .leftside,#content .rightside{
+    width: 100%;
+    float: none;
+  }
+  #content .rightside #myself{
+    width: 100%;
+    float: none;
+  }
+  #content .leftside img{
+  	width: 100%;
+    max-width: 100%;
+  }
+}
